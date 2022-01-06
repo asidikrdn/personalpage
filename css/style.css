@@ -1,0 +1,102 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* Navbar */
+
+/* Akhir Navbar */
+
+/* Header */
+.jumbotron {
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed; /*untuk membuat background diam*/
+    color:rgb(250, 250, 250);
+    overflow: hidden; /* Agar item yang keluar dari boxnya menjadi tertutup atau hilang */
+}
+
+
+.jumbotron img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(250, 250, 250);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width : 250px;
+    border-top: 3px solid gray;
+}
+/* Akhir Header */
+
+/* About */
+section {
+    min-height: 400px;
+}
+
+.pKiri {
+    opacity: 0;
+    transform: translate(-50px, 0) ;
+    transition: 0.5s;
+}
+
+.pKanan {
+    opacity: 0;
+    transform: translate(50px, 0) ;
+    transition: 0.5s;
+}
+
+.pKanan.pMuncul, .pKiri.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* Akhir About */
+
+/* Portfolio */
+.portfolio{
+    background-color: #eee;
+}
+
+.portfolio .thumbnail {
+    opacity: 0; /*untuk menghilangkan konten dengan class thumbnail*/
+    transition: 0.5s;
+    transform: translate(0, -40px); /*membuat efek munculnya sedikit keatas*/
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;    /*untuk memunculkan kembali konten dengan class thumbnail dan ada class muncul didalamnya, class muncul disini akan ditambahkan menggunakan javascript*/
+    transform: translate(0,0); /*mengembalikan gambar ke posisi semula, sehingga ada kesan jatuh*/
+}
+/* Akhir portfolio */
+
+
+/* Contact */
+.contact {
+    min-height: 900px;
+}
+/* Akhir Contact */
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+    padding-top: 25px;
+}
+
+footer p {
+    color: white;
+    font-size: 1em;
+}
+/* Akhir Footer */
