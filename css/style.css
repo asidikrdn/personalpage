@@ -83,6 +83,18 @@ section {
 .contact {
     min-height: 900px;
 }
+
+.contact .tombol {
+    text-align: center;
+}
+
+/* Dekstop Version */
+@media (min-width: 800px) {
+    .contact .tombol {
+        text-align: left;
+    }    
+}
+
 /* Akhir Contact */
 
 /* Footer */
