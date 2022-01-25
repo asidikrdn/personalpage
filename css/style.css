@@ -38,18 +38,27 @@ hr {
 }
 /* Akhir Header */
 
-/* About */
 section {
     min-height: 350px;
+    padding-bottom: 25px;
+
+}
+
+/* About */
+
+.img-about {
+    width: 500px;
 }
 
 .pKiri {
+    font-size: 22px;
     opacity: 0;
     transform: translate(-50px, 0) ;
     transition: 0.5s;
 }
 
 .pKanan {
+    font-size: 22px;
     opacity: 0;
     transform: translate(50px, 0) ;
     transition: 0.5s;
@@ -64,6 +73,7 @@ section {
 /* Skills */
 .skills{
     background-color: #eee;
+    padding-bottom: 20px;
 }
 
 .skills .thumbnail {
@@ -81,7 +91,7 @@ section {
 /* Contact */
 .contact {
     min-height: 450px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .contact .tombol {
