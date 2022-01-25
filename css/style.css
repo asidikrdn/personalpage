@@ -40,7 +40,7 @@ hr {
 
 /* About */
 section {
-    min-height: 400px;
+    min-height: 350px;
 }
 
 .pKiri {
@@ -78,26 +78,10 @@ section {
 }
 /* Akhir skills */
 
-/* experience */
-.experience{
-    background-color: rgb(255, 255, 255);
-}
-
-.experience .thumbnail {
-    opacity: 0; /*untuk menghilangkan konten dengan class thumbnail*/
-    transition: 0.5s;
-    transform: translate(0, -40px); /*membuat efek munculnya sedikit keatas*/
-}
-
-.experience .thumbnail.muncul {
-    opacity: 1;    /*untuk memunculkan kembali konten dengan class thumbnail dan ada class muncul didalamnya, class muncul disini akan ditambahkan menggunakan javascript*/
-    transform: translate(0,0); /*mengembalikan gambar ke posisi semula, sehingga ada kesan jatuh*/
-}
-/* Akhir experience */
-
 /* Contact */
 .contact {
-    min-height: 200px;
+    min-height: 450px;
+    padding-bottom: 20px;
 }
 
 .contact .tombol {
